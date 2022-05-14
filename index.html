@@ -473,10 +473,73 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
-          <svg class="btn-icon">
+          <svg class="btn-icon" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+          <label class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="form-label">Имя</span>
+            <svg class="icon-input" width="18" height="18">
+              <use href="./images/symbol-defs.svg#name-icon"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <input type="tel" class="form-input" name="phone" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <svg class="icon-input" width="18" height="18">
+              <use href="./images/symbol-defs.svg#ico-phone"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <input
+              type="email"
+              class="form-input"
+              name="email"
+              placeholder=" "
+            />
+            <span class="form-label">Почта</span>
+            <svg class="icon-input" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </label>
+          <label class="form-field coment">
+            <textarea
+              name="coment"
+              rows="6"
+              type="text"
+              class="form-input coment-input"
+              placeholder="Введите текст"
+            ></textarea>
+            <span class="form-label">Комментарий</span>
+          </label>
+          <div class="modal-box">
+            <div role="group" class="contract">
+              <label class="accept-label">
+                <input
+                  id="accept"
+                  name="agreement"
+                  type="checkbox"
+                  value="Y"
+                  class="form-checkbox"
+                  required
+                />
+                <span class="form-custom-checkbox">
+                  <svg class="check-icon" width="11" height="8">
+                    <use href="images/symbol-defs.svg#icon-checked"></use>
+                  </svg>
+                </span>
+                <span class="form-option-span"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="#">Условия договора</a></span
+                >
+              </label>
+            </div>
+            <button type="submit" class="button">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -553,6 +616,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="form-wrapper">
+          <b class="footer-sign">Подпишитесь на рассылку</b>
+          <form class="footer-form" autocomplete="off">
+            <input
+              type="email"
+              class="sign-input"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-btn">
+              Подписаться
+              <svg class="footer-icon">
+                <use
+                  width="24"
+                  height="24"
+                  href="./images/symbol-defs.svg#iconform-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
