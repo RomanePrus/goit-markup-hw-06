@@ -441,6 +441,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
   text-align: center;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -452,6 +453,9 @@ img {
   background-color: #fff;
 }
 .modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,9 +464,6 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: auto;
   background-color: transparent;
   cursor: pointer;
 }
@@ -472,8 +473,8 @@ img {
 }
 
 .modal-text {
-  margin-top: 2px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -484,9 +485,7 @@ img {
 .form-field {
   position: relative;
   display: block;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 .form-field.coment {
   margin-bottom: 20px;
@@ -499,11 +498,11 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .form-label {
-  position: absolute;
-  top: -18px;
-  left: 0;
-  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
 
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
@@ -518,7 +517,6 @@ img {
   position: absolute;
   top: 50%;
   left: 15px;
-  transform: translateY(-50%);
 }
 .form-input:focus {
   outline: none;
